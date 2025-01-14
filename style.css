@@ -1,0 +1,128 @@
+/*start font*/
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+/* end font*/
+/* start css reset */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+}
+/* end css reset */
+
+/*start general*/
+nav {
+  width: 100%;
+  min-height: 60px;
+  background: #2d2c2d;
+  padding: 18px 0px 18px 0px;
+}
+nav a {
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: 700;
+}
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+}
+.row {
+  width: 100%;
+}
+.row .message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 380px;
+  background: #f4f9ff;
+  padding: 30px 0px 30px 0px;
+}
+.row .message .container h1 {
+  font-size: 3rem;
+  margin: 0px 0px 10px 0px;
+  color: #212529;
+}
+.row .message .container p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.row .container .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 50px;
+  width: 100%;
+  min-height: 100%;
+  padding: 50px 0px 50px 0px;
+}
+.row .container .grid .column {
+  width: 100%;
+  height: 100%;
+}
+.row .container .grid .column h2 {
+  margin: 0px 0px 10px 0px;
+  font-weight: 600;
+}
+.row .container .grid .column p {
+  font-size: 1rem;
+  margin: 0px 0px 30px 0px;
+}
+.row .container .grid .column .btn-view {
+  min-width: 120px;
+  padding: 10px 16px 10px 16px;
+  font-size: 0.8rem;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  background: #81aece;
+  cursor: pointer;
+}
+.row .container .grid .column .btn-view:hover {
+  background: #ddc2a1;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background: #2d2c2d;
+}
+.footer .container p {
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+}
+.container {
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+}
+/*end general*/
+/*start rwd*/
+@media only screen and (max-width: 768px) {
+  .row .message .container h1 {
+    font-size: 2.4rem;
+    margin: 0px 0px 10px 0px;
+    color: #212529;
+  }
+  .row .container .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 50px;
+    width: 100%;
+    min-height: 100%;
+    padding: 50px 0px 50px 0px;
+  }
+}
+/*end rwd*/
